@@ -23,6 +23,14 @@ actividad_economica = """
                 }
                 """
 
+#Added new const for the times in which the data is not found.
+no_encontrado = """
+                () => { 
+                    const data = document.querySelector("#ctl00_cphMain_lblInformacion.innerText")
+                    return data
+                }
+                """
+
 dgii_url = 'https://www.dgii.gov.do/app/WebApps/ConsultasWeb/consultas/rnc.aspx'
 
 rnc_input_selector = "#ctl00_cphMain_txtRNCCedula"
